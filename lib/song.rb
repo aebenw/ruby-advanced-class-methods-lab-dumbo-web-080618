@@ -34,15 +34,15 @@ class Song
   
   def self.find_by_name(title)
     self.all.find do |song|
-      if song == title
+      if song.name == title
         return song
       end
     end
   end
   
   def self.find_or_create_by_name(title)
-     if self.find_by_name(title) 
-        self.name
+     if self.find_by_name(title) == nil 
+        self.create_by_name(title)
       else 
         self.find_by_name(title)
      end
