@@ -57,11 +57,11 @@ class Song
     
     artist = title.split(" -")
     abc = artist[0]
-    artist_name_array = artist[2].split(".")
+    song_name = artist[1].split(".")
     
     song = self.new 
     song.artist_name = abc
-    song.name = artist_name_array[0] 
+    song.name = song_name[0] 
     return song 
   end
     
