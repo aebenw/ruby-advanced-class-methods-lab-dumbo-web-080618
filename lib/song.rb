@@ -64,7 +64,11 @@ class Song
     song.name = song_name[0] 
     return song 
   end
-    
+  
+  def self.create_from_filename(title)
+    return new_from_filename(title)
+    return self 
+  end
   
 end
 
