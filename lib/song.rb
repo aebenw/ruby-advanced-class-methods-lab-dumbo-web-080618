@@ -75,7 +75,7 @@ class Song
     song_match = self.new 
     song_match.artist_name = abc
     song_match.name = song_name[0] 
-    return song 
+    return song_match 
   end
   
 end
