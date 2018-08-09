@@ -60,8 +60,8 @@ class Song
     song_name = artist.split(".")
     songss = song_name[0]
     song = self.new 
-    song.artist_name = artist
-    song.name = songss
+    song.artist_name = songss
+    song.name = artist 
     return song 
   end
     
