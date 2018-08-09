@@ -63,8 +63,6 @@ class Song
     song.artist_name = artist
     song.name = songss
   end
-
-  end
     
   
 end
