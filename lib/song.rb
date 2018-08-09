@@ -54,6 +54,7 @@ class Song
     
   def self.new_from_filename(title)
     if title[-3..-1] == "mp3"
+    
     artist = title.split(" -")
     artist = artist[0]
     song_name = artist.split(".")
