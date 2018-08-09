@@ -54,7 +54,7 @@ class Song
     
   def self.new_from_filename(title)
     artist = title.split("-")
-    p artist
+    song.artist_name = artist[0]
   end
     
   
