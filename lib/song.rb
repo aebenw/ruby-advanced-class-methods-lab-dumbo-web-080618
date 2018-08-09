@@ -82,5 +82,8 @@ artist = title.split(" - ")
     return song_match 
   end
   
+  def self.destroy_all
+    self.all.clear
+  end
 end
 
