@@ -61,7 +61,7 @@ class Song
     songss = song_name[0]
     song = self.new 
     song.artist_name = songss
-    song.name = artist 
+    song.name = abc 
     return song 
   end
     
