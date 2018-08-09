@@ -68,13 +68,16 @@ class Song
   def self.create_from_filename(title)
     
     
-    artist = title.split(" - ")
+artist = title.split(" - ")
     abc = artist[0]
     song_name = artist[1].split(".")
     
-    song_match = self.new 
-    song_match.name = song_name[0] 
-    song_match.artist_name = abc
+    song = self.new 
+    song.save
+    song.artist_name = abc
+    song.name = song_name[0] 
+    return song 
+ 
 
     return song_match 
   end
