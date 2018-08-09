@@ -73,8 +73,9 @@ class Song
     song_name = artist[1].split(".")
     
     song_match = self.new 
-    song_match.artist_name = abc
     song_match.name = song_name[0] 
+    song_match.artist_name = abc
+
     return song_match 
   end
   
